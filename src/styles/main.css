@@ -520,6 +520,144 @@ body {
   line-height: 1.45;
 }
 
+.slide--marketing-intro,
+.slide--audiences,
+.slide--outside,
+.slide--campaigns,
+.slide--marketing-close {
+  position: relative;
+}
+
+.marketing-copy {
+  width: min(100%, 68rem);
+  margin: 0 auto;
+  padding-top: 5.25rem;
+}
+
+.marketing-copy--center {
+  text-align: center;
+}
+
+.marketing-kicker {
+  max-width: none;
+  margin: 0 0 1rem;
+  color: var(--fv-orange);
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.marketing-copy h2 {
+  max-width: none;
+  margin: 0 0 2rem;
+  color: var(--fv-blue);
+  text-align: center;
+  font-size: 3.8rem;
+}
+
+.reveal .marketing-statement {
+  max-width: 62rem;
+  margin: 0 auto;
+  color: var(--fv-orange);
+  font-size: 2.45rem;
+  line-height: 1.28;
+  text-align: center;
+}
+
+.marketing-statement span,
+.marketing-closing span {
+  color: var(--fv-blue);
+}
+
+.marketing-columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.marketing-columns article {
+  padding-top: 1.25rem;
+  border-top: 4px solid var(--fv-orange);
+}
+
+.reveal .marketing-number {
+  margin: 0 0 0.75rem;
+  color: var(--fv-orange);
+  font-family: var(--fv-font-mono);
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.marketing-columns h3,
+.campaign-list h3 {
+  margin: 0 0 0.8rem;
+  color: var(--fv-blue);
+  font-family: var(--fv-font-heading);
+  font-size: 1.85rem;
+  font-weight: 800;
+}
+
+.reveal .marketing-columns p,
+.reveal .campaign-list p {
+  margin: 0;
+  color: var(--fv-orange);
+  font-size: 1.15rem;
+  line-height: 1.45;
+}
+
+.travel-line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 3rem auto 0;
+}
+
+.travel-line span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 3rem;
+  padding: 0 1rem;
+  border: 2px solid rgb(78 140 255 / 0.35);
+  color: var(--fv-blue);
+  font-family: var(--fv-font-heading);
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.travel-line span:nth-child(even) {
+  border-color: rgb(255 138 61 / 0.45);
+  color: var(--fv-orange);
+}
+
+.campaign-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.35rem 1.5rem;
+}
+
+.campaign-list article {
+  padding-top: 1.1rem;
+  border-top: 4px solid var(--fv-orange);
+}
+
+.reveal .marketing-closing {
+  max-width: 58rem;
+  margin: 0 auto;
+  color: var(--fv-orange);
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.marketing-closing span {
+  display: block;
+}
+
 @media (max-width: 900px) {
   .reveal section {
     padding: 2rem 1.5rem 2.5rem;
@@ -694,5 +832,53 @@ body {
 
   .featured-grid article {
     padding: 1rem;
+  }
+
+  .marketing-copy {
+    padding-top: 4.5rem;
+  }
+
+  .marketing-copy h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2.55rem;
+  }
+
+  .reveal .marketing-statement {
+    font-size: 1.65rem;
+  }
+
+  .marketing-columns,
+  .campaign-list {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .marketing-columns article,
+  .campaign-list article {
+    padding-top: 0.8rem;
+  }
+
+  .marketing-columns h3,
+  .campaign-list h3 {
+    margin-bottom: 0.45rem;
+    font-size: 1.45rem;
+  }
+
+  .reveal .marketing-columns p,
+  .reveal .campaign-list p {
+    font-size: 1rem;
+  }
+
+  .travel-line {
+    margin-top: 2rem;
+  }
+
+  .travel-line span {
+    min-height: 2.4rem;
+    font-size: 0.95rem;
+  }
+
+  .reveal .marketing-closing {
+    font-size: 2.5rem;
   }
 }
