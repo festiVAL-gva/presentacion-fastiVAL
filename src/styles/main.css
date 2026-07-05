@@ -1,0 +1,221 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sora';
+  src: url('/fonts/Sora-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/JetBrainsMono-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/JetBrainsMono-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --fv-bg: #07070c;
+  --fv-surface: #0b0b14;
+  --fv-elevated: #11111d;
+  --fv-text: #f4f4fa;
+  --fv-muted: #c9ccdb;
+  --fv-blue: #4e8cff;
+  --fv-med-blue: #2d9cdb;
+  --fv-coral: #ff4d4d;
+  --fv-orange: #ff8a3d;
+  --fv-sand: #f8f5f0;
+  --fv-navy: #0f172a;
+  --fv-font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --fv-font-data: var(--fv-font-ui);
+  --fv-font-heading: 'Sora', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --fv-font-hero: var(--fv-font-ui);
+  --fv-font-hero-emphasis: var(--fv-font-heading);
+  --fv-font-brand: var(--fv-font-heading);
+  --fv-font-mono: 'JetBrains Mono', 'Fira Code', 'Source Code Pro', 'Cascadia Code', Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+body {
+  margin: 0;
+  background: var(--fv-sand);
+}
+
+.reveal {
+  color: var(--fv-navy);
+  font-family: var(--fv-font-ui);
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal section {
+  min-height: 70vh;
+  box-sizing: border-box;
+  padding: clamp(2rem, 4vw, 4rem);
+}
+
+.reveal .slides section.slide--hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reveal h1,
+.reveal h2 {
+  font-family: var(--fv-font-hero-emphasis);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+}
+
+.reveal h1 {
+  max-width: 900px;
+  margin: 0;
+  font-size: clamp(2.35rem, 4.4vw, 3.9rem);
+}
+
+.reveal h2 {
+  max-width: 850px;
+  font-size: clamp(2.4rem, 5vw, 4.8rem);
+}
+
+.reveal p {
+  max-width: 760px;
+  color: rgb(15 23 42 / 0.72);
+  font-family: var(--fv-font-ui);
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  line-height: 1.5;
+}
+
+.reveal ul {
+  color: rgb(15 23 42 / 0.72);
+  font-family: var(--fv-font-ui);
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+
+.reveal ul li::marker {
+  color: var(--fv-coral);
+}
+
+.hero-copy {
+  width: min(100%, 66rem);
+}
+
+.slide--hero h1,
+.slide--hero p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slide--hero p {
+  margin: 0;
+  margin-top: 1.25rem;
+}
+
+.hero-title-accent {
+  color: var(--fv-orange);
+}
+
+.hero-logo {
+  display: block;
+  width: 10.5rem;
+  height: auto;
+  margin: 0.75rem auto 0;
+}
+
+.slide--index {
+  position: relative;
+}
+
+.slide-logo {
+  position: absolute;
+  top: -6.5rem;
+  left: clamp(2rem, 4vw, 4rem);
+  display: block;
+  width: 13rem;
+  height: auto;
+}
+
+.index-copy {
+  width: min(100%, 48rem);
+  margin: 0 auto;
+  padding-top: 7rem;
+}
+
+.index-copy h2 {
+  max-width: none;
+  margin: 0 0 3rem;
+  color: var(--fv-blue);
+  text-align: center;
+  font-size: 4rem;
+}
+
+.index-list {
+  width: fit-content;
+  margin: 0 auto;
+  padding-left: 1.2em;
+  color: var(--fv-orange);
+  font-size: 3rem;
+  line-height: 1.35;
+}
+
+.index-list li::marker {
+  color: var(--fv-orange);
+}
+
+@media (max-width: 900px) {
+  .reveal section {
+    padding: 2rem 1.5rem 2.5rem;
+  }
+
+  .reveal h1 {
+    font-size: clamp(2rem, 7.2vw, 3.3rem);
+  }
+
+  .hero-logo {
+    width: 8rem;
+    margin-top: 0.75rem;
+  }
+
+  .slide-logo {
+    top: -4.5rem;
+    left: 1.5rem;
+    width: 9.5rem;
+  }
+
+  .index-copy h2 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+  }
+
+  .index-list {
+    font-size: 2rem;
+  }
+}
