@@ -190,6 +190,39 @@ body {
   color: var(--fv-orange);
 }
 
+.slide--about {
+  position: relative;
+}
+
+.about-copy {
+  width: min(100%, 58rem);
+  margin: 0 auto;
+  padding-top: 6rem;
+  text-align: center;
+}
+
+.about-copy h2 {
+  max-width: none;
+  margin: 0 0 3rem;
+  color: var(--fv-blue);
+  text-align: center;
+  font-size: 4rem;
+}
+
+.reveal .about-statement {
+  max-width: 56rem;
+  margin: 0 auto;
+  color: var(--fv-orange);
+  font-family: var(--fv-font-ui);
+  font-size: 3rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.reveal .about-statement span {
+  color: var(--fv-blue);
+}
+
 @media (max-width: 900px) {
   .reveal section {
     padding: 2rem 1.5rem 2.5rem;
@@ -216,6 +249,19 @@ body {
   }
 
   .index-list {
+    font-size: 2rem;
+  }
+
+  .about-copy {
+    padding-top: 5rem;
+  }
+
+  .about-copy h2 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+  }
+
+  .about-statement {
     font-size: 2rem;
   }
 }
