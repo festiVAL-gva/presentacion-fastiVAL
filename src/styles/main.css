@@ -69,6 +69,14 @@ body {
   font-family: var(--fv-font-ui);
 }
 
+.reveal .progress {
+  color: var(--fv-orange);
+}
+
+.reveal .progress span {
+  background: var(--fv-orange);
+}
+
 .reveal .slides {
   text-align: left;
 }
@@ -223,6 +231,61 @@ body {
   color: var(--fv-blue);
 }
 
+.slide--content {
+  position: relative;
+}
+
+.slide--content .slide-logo {
+  top: 1rem;
+}
+
+.content-copy {
+  width: min(100%, 62rem);
+  margin: 0 auto;
+  padding-top: 4.5rem;
+}
+
+.content-copy h2 {
+  max-width: none;
+  margin: 0 0 1.5rem;
+  color: var(--fv-blue);
+  text-align: center;
+  font-size: 3.6rem;
+}
+
+.content-copy > .about-statement {
+  max-width: 58rem;
+  margin-bottom: 2rem;
+  font-size: 1.55rem;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.content-grid article {
+  padding: 1.35rem 1.45rem;
+  border-top: 4px solid var(--fv-orange);
+  background: rgb(255 255 255 / 0.55);
+}
+
+.content-grid h3 {
+  margin: 0 0 0.6rem;
+  color: var(--fv-navy);
+  font-family: var(--fv-font-heading);
+  font-size: 1.45rem;
+  font-weight: 800;
+}
+
+.reveal .content-grid p {
+  margin: 0;
+  color: rgb(15 23 42 / 0.72);
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
 @media (max-width: 900px) {
   .reveal section {
     padding: 2rem 1.5rem 2.5rem;
@@ -241,6 +304,10 @@ body {
     top: -4.5rem;
     left: 1.5rem;
     width: 9.5rem;
+  }
+
+  .slide--content .slide-logo {
+    top: 0.5rem;
   }
 
   .index-copy h2 {
@@ -263,5 +330,26 @@ body {
 
   .about-statement {
     font-size: 2rem;
+  }
+
+  .content-copy {
+    padding-top: 4rem;
+  }
+
+  .content-copy h2 {
+    font-size: 2.6rem;
+  }
+
+  .content-copy > .about-statement {
+    font-size: 1.25rem;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .content-grid article {
+    padding: 1rem;
   }
 }
