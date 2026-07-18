@@ -153,7 +153,7 @@ body {
 
 .hero-logo {
   display: block;
-  width: 10.5rem;
+  width: 11rem;
   height: auto;
   margin: 0.75rem auto 0;
 }
@@ -167,7 +167,7 @@ body {
   top: 1rem;
   left: clamp(2rem, 4vw, 4rem);
   display: block;
-  width: 13rem;
+  width: 8rem;
   height: auto;
 }
 
@@ -668,14 +668,14 @@ body {
   }
 
   .hero-logo {
-    width: 8rem;
+    width: 8.5rem;
     margin-top: 0.75rem;
   }
 
   .slide-logo {
     top: 0.5rem;
     left: 1.5rem;
-    width: 9.5rem;
+    width: 6rem;
   }
 
   .index-copy h2 {
